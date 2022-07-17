@@ -53,7 +53,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
 }
 
 .header-links {
-    display: block;
+    display: flex;
     padding: 32px 0;
     align-items: center;
     font-weight: 500;
@@ -162,12 +162,12 @@ h1, h2, h3, h4, h5, h6, p, ul {
     letter-spacing: 0.03em;
 }
 
-.futures-icons {
-    margin: 25px 100px;
-}
-
 .container-futures-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 270px;
+    height: 120px;
     margin-bottom: 30px;
     background: #F5F4FA;
     border-radius: 4px;
@@ -254,7 +254,11 @@ h1, h2, h3, h4, h5, h6, p, ul {
 }
 
 .team-icons {
-    padding: 12px;
+    display: flex;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
     background: none;
     border: none;
     border-radius: 50%;
@@ -268,17 +272,16 @@ h1, h2, h3, h4, h5, h6, p, ul {
     justify-content: space-between;
     margin-top: 16px;
     margin-bottom: 32px;
-    margin-left: 30px;
-    margin-right: 30px;
-}
-
-.clients-icons {
-    display: block;
-    padding: 16px 32px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .container-clients-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 170px;
+    height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     fill: #afb1b8;
@@ -328,6 +331,7 @@ address {
 
 .footer-block .container {
     display: flex;
+    align-items: baseline;
 }
 
 .join-text {
@@ -344,11 +348,20 @@ address {
 }
 
 .container-join-icons {
+    display: flex;
     margin-top: 20px;
 }
 
+.join-icons + .join-icons {
+    margin-left: 10px;
+}
+
 .join-icons {
-    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
     border: none;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
@@ -418,11 +431,6 @@ address {
     flex-basis: calc((100% - 60px) / 3);
 }
 
-.portfolio-list .item:hover {
-    border: 1px solid #EEEEEE;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
 .portfolio-card {
     padding: 20px 24px;
     width: 370px;
@@ -434,4 +442,12 @@ address {
 
 .portfolio-img {
     display: block;
+}
+
+.portfolio-block {
+    display: block;
+}
+
+.portfolio-block:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
